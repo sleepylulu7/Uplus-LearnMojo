@@ -1,0 +1,161 @@
+.site-header {
+    align-items: center;
+    background: var(--color-surface-primary);
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+    position: sticky;
+    top: 0;
+    z-index: var(--z-index-sticky-header);
+}
+
+.brand {
+    align-items: center;
+    color: var(--color-brand-orange);
+    display: inline-flex;
+    font-weight: var(--font-weight-bold);
+    gap: 0.5rem;
+    min-width: max-content;
+}
+
+.brand img {
+    display: block;
+    height: 4.75rem;
+    width: 4.75rem;
+}
+
+.brand-name {
+    /* LearnMojo */
+    font-family: var(--font-family-brand);
+    font-style: normal;
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-brand);
+    line-height: 2.3125rem;
+    color: var(--color-brand-orange);
+}
+
+.main-nav {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.125rem;
+    justify-content: center;
+}
+
+.main-nav a,
+.language-button {
+    font-family: var(--font-family-primary);
+    font-size: var(--font-size-header);
+    font-weight: var(--font-weight-medium);
+}
+
+.header-actions {
+    align-items: center;
+    display: flex;
+    gap: 1.125rem;
+    min-width: max-content;
+}
+
+.language-button {
+    align-items: center;
+    background: transparent;
+    border: 0;
+    display: inline-flex;
+    gap: 0.375rem;
+    padding: 0.375rem 0;
+}
+
+.language-chevron {
+    border-bottom: 0.125rem solid currentColor;
+    border-right: 0.125rem solid currentColor;
+    display: block;
+    height: 0.375rem;
+    transform: rotate(45deg) translateY(-0.125rem);
+    width: 0.375rem;
+}
+
+.language-button[aria-expanded="true"] .language-chevron {
+    transform: rotate(225deg) translate(-0.125rem, -0.125rem);
+}
+
+.language-selector {
+    margin-left: 1.25rem;
+    position: relative;
+}
+
+.language-menu {
+    background: var(--color-surface-primary);
+    border: 0.0625rem solid var(--color-brand-orange-border-subtle);
+    border-radius: 0.5rem;
+    box-shadow: 0 0.375rem 1rem var(--color-shadow-menu);
+    display: grid;
+    gap: 0.125rem;
+    min-width: 5.5rem;
+    padding: 0.375rem;
+    position: absolute;
+    right: 0;
+    top: calc(100% + 0.5rem);
+    z-index: var(--z-index-dropdown);
+}
+
+.language-option {
+    background: transparent;
+    border: 0;
+    border-radius: 0.375rem;
+    color: var(--color-text-primary);
+    font-size: var(--font-size-header);
+    padding: 0.5rem 0.625rem;
+    text-align: left;
+}
+
+.language-option:hover,
+.language-option[aria-selected="true"] {
+    background: var(--color-brand-orange-hover-bg);
+    color: var(--color-brand-orange);
+}
+
+.button {
+    align-content: center;
+    border: var(--button-large-border-width) solid var(--color-brand-orange);
+    border-radius: var(--button-large-radius);
+    font-family: var(--font-family-primary);
+    font-style: normal;
+    font-weight: var(--font-weight-medium);
+    font-size: var(--font-size-header);
+    line-height: 1.125rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0 var(--button-header-padding-inline);
+}
+
+.signin-button {
+    height: var(--button-header-height);
+    filter: var(--button-large-shadow);
+    background-color: var(--color-surface-primary);
+    color: var(--color-brand-orange);
+}
+
+.donate-button {
+    height: var(--button-header-height);
+    filter: var(--button-large-shadow);
+    background-color: var(--color-brand-orange);
+    color: var(--color-text-inverse);
+}
+
+
+@media (max-width: var(--breakpoint-header-stack)) {
+    .site-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .main-nav {
+        justify-content: flex-start;
+    }
+
+    .header-actions {
+        width: 100%;
+    }
+}
