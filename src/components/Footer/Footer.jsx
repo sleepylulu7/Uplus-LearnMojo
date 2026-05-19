@@ -45,8 +45,10 @@ function Footer({ copy }) {
 
             <form className="mailing-list" aria-label={copy.mailingLabel}>
                 <label htmlFor="email">{copy.mailingTitle}</label>
-                <input id="email" type="email" placeholder={copy.emailPlaceholder} />
-                <button type="submit">{copy.subscribe}</button>
+                <div className="mailing-list-controls">
+                    <input id="email" type="email" placeholder={copy.emailPlaceholder} />
+                    <button type="submit">{copy.subscribe}</button>
+                </div>
             </form>
 
             <p className="copyright">{copy.copyright}</p>

@@ -47,32 +47,41 @@
   align-self: start;
 }
 
+.mailing-list-controls {
+  align-items: center;
+  background: var(--color-brand-orange);
+  border-radius: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 2rem;
+  padding: 1.125rem 1.25rem 1rem;
+}
+
 .mailing-list input {
   border: 0;
-  border-radius: 0.625rem;
+  border-radius: var(--button-large-radius);
   display: block;
-  margin: 2rem 0 0.875rem;
   min-height: 3.125rem;
   padding: 0 1.125rem;
+  text-align: center;
   width: 100%;
-
 }
 
 .mailing-list button {
   align-items: center;
-  background: var(--color-brand-orange);
+  background: var(--color-text-primary);
   border: 0;
   border-radius: var(--button-large-radius);
-  color: var(--color-text-primary);
+  color: var(--color-text-inverse);
   display: inline-flex;
   font-family: var(--font-family-accent);
   font-size: var(--font-size-footer-button);
   font-weight: var(--font-weight-regular);
   justify-content: center;
   min-height: 2.75rem;
-  min-width: 17.9375rem;
+  min-width: 8.75rem;
   padding: 0 2.125rem;
-  text-transform: uppercase;
 }
 
 .copyright {
