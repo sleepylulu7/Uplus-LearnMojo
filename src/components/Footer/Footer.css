@@ -1,0 +1,109 @@
+.site-footer {
+  background: var(--color-footer-bg);
+  color: var(--color-text-inverse);
+  display: grid;
+  gap: 2.625rem;
+  grid-template-columns: minmax(0, 1fr) minmax(15rem, 20rem);
+  padding: 4.5rem clamp(1.5rem, 9vw, 11.25rem) 2.375rem;
+}
+
+.footer-links {
+  display: grid;
+  gap: 1.75rem;
+  grid-template-columns: repeat(4, minmax(7.5rem, 1fr));
+}
+
+.footer-links h2,
+.mailing-list label {
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-footer-heading);
+  font-weight: var(--font-weight-bold);
+  margin: 0 0 1.375rem;
+}
+
+.footer-links a {
+  color: var(--color-text-inverse-muted);
+  display: block;
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-footer-link);
+  font-weight: var(--font-weight-regular);
+  margin-bottom: 0.625rem;
+}
+
+.footer-links .social-link {
+  align-items: center;
+  display: flex;
+  gap: var(--icon-footer-social-gap);
+}
+
+.social-link img {
+  display: block;
+  flex: 0 0 auto;
+  height: var(--icon-footer-social-height);
+  width: var(--icon-footer-social-width);
+}
+
+.mailing-list {
+  align-self: start;
+}
+
+.mailing-list input {
+  border: 0;
+  border-radius: 0.625rem;
+  display: block;
+  margin: 0 0 0.875rem;
+  min-height: 3.125rem;
+  padding: 0 1.125rem;
+  width: 100%;
+}
+
+.mailing-list button {
+  align-items: center;
+  background: var(--color-brand-orange);
+  border: 0;
+  border-radius: var(--button-large-radius);
+  color: var(--color-text-primary);
+  display: inline-flex;
+  font-family: var(--font-family-accent);
+  font-size: var(--font-size-footer-button);
+  font-weight: var(--font-weight-regular);
+  justify-content: center;
+  min-height: 2.75rem;
+  min-width: 17.9375rem;
+  padding: 0 2.125rem;
+  text-transform: uppercase;
+}
+
+.copyright {
+  color: var(--color-text-inverse-subtle);
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-copyright);
+  font-weight: var(--font-weight-light);
+  grid-column: 1 / -1;
+  margin: 1.125rem 0 0;
+  padding-top: 1.875rem;
+  position: relative;
+  text-align: center;
+}
+
+.copyright::before {
+  border-top: var(--footer-divider-height) solid var(--color-footer-divider);
+  content: "";
+  left: 50%;
+  position: absolute;
+  top: 0;
+  transform: translateX(-50%);
+  width: 99vw;
+}
+
+@media (max-width: var(--breakpoint-footer-stack)) {
+  .site-footer {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: var(--breakpoint-mobile)) {
+  .footer-links {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,19 +1,20 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
-import Header from "./components/Header"
-
+import Footer from "./components/Footer/Footer"
+import Header from "./components/Header/Header"
+import { translations } from "./constants/translations"
+import Home from "./pages/Home/Home"
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [language, setLanguage] = useState("en")
+  const copy = translations[language]
 
   return (
-    <>
-      <div>
-        <Header />
-      </div>
-    </>
+    <div className="app">
+      <Header copy={copy.nav} language={language} onLanguageChange={setLanguage} />
+      <Home copy={copy} />
+      <Footer copy={copy.footer} />
+    </div>
   )
 }
 
