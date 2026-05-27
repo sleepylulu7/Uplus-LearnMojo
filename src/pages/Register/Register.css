@@ -1,0 +1,62 @@
+.register-page {
+  width: 100%;
+}
+
+.registration-art {
+  display: flex;
+  justify-content: center;
+}
+
+.registration-art #mascot {
+  width: var(--container-register-xs);
+}
+
+.registration-heading {
+  font-family: var(--font-family-heading);
+  width: var(--container-register-sm);
+  margin: 0 auto;
+}
+
+.registration-heading h1 {
+  text-align: left;
+}
+
+.register-form-content {
+  display: flex;
+  justify-content: center;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  width: var(--container-register-sm);
+  font-family: var(--font-family-primary);
+  font-weight: var(--font-weight-heavy);
+  gap: 12px;
+
+  align-items: stretch;
+}
+
+form label {
+  font-size: var(--font-size-register-label);
+}
+
+form input {
+  height: 50px;
+  box-sizing: border-box;
+  border-radius: var(--register-input-radius-sm);
+  border-width: var(--register-input-border-size-sm);
+  font-family: var(--font-family-primary);
+  background-color: var(--color-register-input);
+}
+
+.signin-button {
+  border: none;
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-register-button);
+  border-radius: var(--button-large-radius);
+  height: var(--button-header-height);
+  filter: var(--button-large-shadow);
+  background-color: var(--color-brand-orange);
+  color: var(--color-text-inverse);
+}
