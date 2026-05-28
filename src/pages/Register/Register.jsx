@@ -1,4 +1,6 @@
 import mascotSvg from "../../assets/svgs/body_image_mascot.svg";
+import googleSvg from "../../assets/icons/google.svg";
+import facebookSvg from "../../assets/icons/facebook_blue.svg";
 import "./Register.css";
 
 function Register({ copy }) {
@@ -31,9 +33,30 @@ function Register({ copy }) {
         </form>
       </div>
 
+      <div className="separator-content">
+        <hr />
+        <p>{copy.separators.social}</p>
+        <hr />
+      </div>
+
       <div className="social-signup">
-        <button type="submit">{copy.socialAuth.google}</button>
-        <button type="submit">{copy.socialAuth.facebook}</button>
+        <button type="button" className="social-btn">
+          <img src={googleSvg} alt="google icon" className="google-icon" />
+          {copy.socialAuth.google}
+        </button>
+        <button type="button" className="social-btn">
+          <img
+            src={facebookSvg}
+            alt="facebook icon"
+            className="facebook-icon"
+          />
+          {copy.socialAuth.facebook}
+        </button>
+      </div>
+
+      <div className="separator-login">
+        <span>{copy.separators.loginText}</span>
+        <a href="#login">{copy.separators.login}</a>
       </div>
     </main>
   );

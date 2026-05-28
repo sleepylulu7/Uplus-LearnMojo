@@ -98,19 +98,6 @@
   --font-size-footer-button: 1.5rem;
   --font-size-copyright: 1.5rem;
 
-  --font-size-register-label: 1.1rem;
-  --font-size-register-button: 1.2rem;
-
-  --container-register-xs: 200px;
-  --container-register-sm: 400px;
-  --container-register-md: 600px;
-  --container-register-lg: 900px;
-
-  --register-input-border-size-sm: 2px;
-  --register-input-radius-sm: 0.5rem;
-
-  --color-register-input: #f8f8f8;
-
   --color-text-primary: #111111;
   --color-text-inverse: #ffffff;
   --color-text-muted: rgba(14, 14, 14, 0.62);
@@ -165,4 +152,25 @@
   --page-min-width: 20rem;
   --focus-outline: 0.1875rem solid var(--color-brand-orange);
   --focus-outline-offset: 0.1875rem;
+
+  --font-size-register-label: 1.1rem;
+  --font-size-register-button: 1.2rem;
+  --font-size-social-button: 0.925rem;
+
+  --container-register-xs: 200px;
+  --container-register-sm: 400px;
+  --container-register-md: 600px;
+  --container-register-lg: 900px;
+
+  --register-input-border-size-sm: 2px;
+  --register-input-radius-sm: 0.5rem;
+
+  --color-register-input: rgb(247, 247, 247);
+  --color-register-separtors: #868686;
+  --color-social-button-primary: rgb(240, 239, 239);
+
+  --button-social-small-min-width: 16.3125rem;
+  --button-social-small-height: 2.525rem;
+  --button-social-small-radius: 20px;
+  --button-social-border-width: 0.12rem;
 }

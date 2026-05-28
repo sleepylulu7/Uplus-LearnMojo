@@ -85,8 +85,9 @@ export const translations = {
         facebook: "Facebook",
       },
       separators: {
-        social: "Or",
-        login: "Already have an account? Log in",
+        social: "OR",
+        loginText: "Already have an account?",
+        login: "Log in",
       },
     },
   },
@@ -160,7 +161,7 @@ export const translations = {
       title: "Registre",
       fields: {
         email: "Email",
-        username: "nom d'utilisateur",
+        username: "Nom d'utilisateur",
         password: "Mot de passe",
         confirmPassword: "Confirmez le mot de passe",
       },
@@ -176,7 +177,9 @@ export const translations = {
         facebook: "Facebook",
       },
       separators: {
-        social: "Ou",
+        social: "OU",
+        loginText: "Vous avez déjà un compte?",
+        login: "Se connecter",
       },
     },
   },
