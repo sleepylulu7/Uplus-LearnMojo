@@ -49,11 +49,6 @@ function Login({ copy }) {
           {copy.socialAuth.facebook}
         </button>
       </div>
-
-      <div className="separator-login">
-        <span>{copy.separators.loginText}</span>
-        <a href="#login">{copy.separators.login}</a>
-      </div>
     </main>
   );
 }
