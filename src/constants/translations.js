@@ -68,6 +68,7 @@ export const translations = {
     auth: {
       title: "Register",
       fields: {
+        emailOrUsername: "Email or Username",
         email: "Email",
         username: "Username",
         password: "Password",
@@ -78,7 +79,9 @@ export const translations = {
         username: "jessy1234",
       },
       actions: {
+        forgotPassword: "Forgot password ?",
         signup: "Sign Up \u2192",
+        signin: "Sign In \u2192",
       },
       socialAuth: {
         google: "Google",
@@ -160,6 +163,7 @@ export const translations = {
     auth: {
       title: "Registre",
       fields: {
+        emailOrUsername: "Email ou nom d'utilisateur",
         email: "Email",
         username: "Nom d'utilisateur",
         password: "Mot de passe",
@@ -170,6 +174,8 @@ export const translations = {
         username: "jessy1234",
       },
       actions: {
+        login: "Se connecter",
+        forgotPassword: "Mot de passe oublié ?",
         signup: "S'inscrire \u2192",
       },
       socialAuth: {

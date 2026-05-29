@@ -53,6 +53,10 @@ form input {
   background-color: var(--color-auth-input);
 }
 
+form a {
+  color: var(--color-auth-separtors);
+}
+
 .signin-button {
   border: none;
   margin-top: 10px;
