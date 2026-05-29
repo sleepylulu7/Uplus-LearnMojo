@@ -153,20 +153,20 @@
   --focus-outline: 0.1875rem solid var(--color-brand-orange);
   --focus-outline-offset: 0.1875rem;
 
-  --font-size-register-label: 1.1rem;
-  --font-size-register-button: 1.2rem;
+  --font-size-auth-label: 1.1rem;
+  --font-size-auth-button: 1.2rem;
   --font-size-social-button: 0.925rem;
 
-  --container-register-xs: 200px;
-  --container-register-sm: 400px;
-  --container-register-md: 600px;
-  --container-register-lg: 900px;
+  --container-auth-xs: 200px;
+  --container-auth-sm: 400px;
+  --container-auth-md: 600px;
+  --container-auth-lg: 900px;
 
-  --register-input-border-size-sm: 2px;
-  --register-input-radius-sm: 0.5rem;
+  --auth-input-border-size-sm: 2px;
+  --auth-input-radius-sm: 0.5rem;
 
-  --color-register-input: rgb(247, 247, 247);
-  --color-register-separtors: #868686;
+  --color-auth-input: rgb(247, 247, 247);
+  --color-auth-separtors: #868686;
   --color-social-button-primary: rgb(240, 239, 239);
 
   --button-social-small-min-width: 16.3125rem;

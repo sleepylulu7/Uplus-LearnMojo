@@ -65,7 +65,7 @@ export const translations = {
       subscribe: "Subscribe",
       copyright: "Copyright 2026 © All rights reserved.",
     },
-    register: {
+    auth: {
       title: "Register",
       fields: {
         email: "Email",
@@ -157,7 +157,7 @@ export const translations = {
       subscribe: "S'abonner",
       copyright: "Copyright 2026 © Tous droits réservés.",
     },
-    register: {
+    auth: {
       title: "Registre",
       fields: {
         email: "Email",
