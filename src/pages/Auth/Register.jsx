@@ -10,7 +10,7 @@ function Register({ copy }) {
         <img id="mascot" src={mascotSvg} alt="" aria-hidden="true" />
       </div>
       <div className="auth-heading">
-        <h1>{copy.title}</h1>
+        <h1>{copy.titles.register}</h1>
       </div>
 
       <div className="auth-form-content">

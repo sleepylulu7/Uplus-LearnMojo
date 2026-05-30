@@ -66,7 +66,10 @@ export const translations = {
       copyright: "Copyright 2026 © All rights reserved.",
     },
     auth: {
-      title: "Register",
+      titles: {
+        register: "Register",
+        login: "Login",
+      },
       fields: {
         emailOrUsername: "Email or Username",
         email: "Email",
@@ -161,7 +164,10 @@ export const translations = {
       copyright: "Copyright 2026 © Tous droits réservés.",
     },
     auth: {
-      title: "Registre",
+      titles: {
+        register: "Registre",
+        login: "Se connecter",
+      },
       fields: {
         emailOrUsername: "Email ou nom d'utilisateur",
         email: "Email",
