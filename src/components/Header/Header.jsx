@@ -1,7 +1,9 @@
+import { Link } from "react-router-dom"
 import { useState } from "react"
 import logoHeadSvg from "../../assets/svgs/logo-head.svg"
 import { languageOptions } from "../../constants/languageOptions"
 import "./Header.css"
+
 
 function Header({ copy, language, onLanguageChange }) {
     const [isLanguageMenuOpen, setIsLanguageMenuOpen] = useState(false)
@@ -14,21 +16,21 @@ function Header({ copy, language, onLanguageChange }) {
 
     return (
         <header className="site-header">
-            <a className="brand" href="#home" aria-label="LearnMojo home">
+            <Link className="brand" to="/" aria-label="LearnMojo home">
                 <img
                     alt="U+"
                     loading="lazy"
                     decoding="async"
                     src={logoHeadSvg} />
                 <span className="brand-name">LearnMojo</span>
-            </a>
+            </Link>
 
             <nav className="main-nav" aria-label="Primary navigation">
-                <a href="#home">{copy.home}</a>
+                <Link to="/">{copy.home}</Link>
                 <a href="#about">{copy.about}</a>
                 <a href="#programs">{copy.program}</a>
                 <a href="#resources">{copy.resources}</a>
-                <a href="#contact">{copy.contact}</a>
+                <Link to="/minigame">Mini Game</Link>
             </nav>
 
             <div className="header-actions">
