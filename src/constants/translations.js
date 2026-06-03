@@ -180,9 +180,9 @@ export const translations = {
         username: "jessy1234",
       },
       actions: {
-        login: "Se connecter",
         forgotPassword: "Mot de passe oublié ?",
         signup: "S'inscrire \u2192",
+        signin: "Se connecter \u2192",
       },
       socialAuth: {
         google: "Google",

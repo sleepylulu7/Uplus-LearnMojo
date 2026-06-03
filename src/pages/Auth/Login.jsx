@@ -24,7 +24,7 @@ function Login({ copy }) {
           <a>{copy.actions.forgotPassword}</a>
 
           <button className="signin-button" type="submit">
-            {copy.actions.signup}
+            {copy.actions.signin}
           </button>
         </form>
       </div>
