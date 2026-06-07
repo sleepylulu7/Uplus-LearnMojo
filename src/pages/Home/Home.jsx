@@ -14,7 +14,7 @@ function Home({ copy }) {
                 <div className="hero-copy">
                     <h1 id="hero-title" className="eyebrow">{copy.hero.title}</h1>
                     <p className="hero-text">{copy.hero.text}</p>
-                    <a className="primary-button" href="#programs">{copy.hero.cta}</a>
+                    <a className="primary-button" href="/home">{copy.hero.cta}</a>
                 </div>
 
                 <div className="hero-art" aria-label="LearnMojo classroom illustration">
@@ -32,7 +32,7 @@ function Home({ copy }) {
                     <div className="about-copy">
                         <h2 id="about-title">{copy.about.title}</h2>
                         <p>{copy.about.text}</p>
-                        <a className="secondary-button" href="#about">{copy.about.cta}</a>
+                        <a className="secondary-button" href="/about">{copy.about.cta}</a>
                     </div>
                 </div>
             </section>
@@ -51,7 +51,7 @@ function Home({ copy }) {
                             <div>
                                 <h3>{programCopy.title}</h3>
                                 <p>{programCopy.description}</p>
-                                <a href={`#${program.id}`}>{copy.programs.letsPlay}</a>
+                                <a href="/home">{copy.programs.letsPlay}</a>
                             </div>
                         </article>
                         )

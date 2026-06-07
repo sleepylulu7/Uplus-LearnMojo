@@ -14,7 +14,7 @@ function Header({ copy, language, onLanguageChange }) {
 
     return (
         <header className="site-header">
-            <a className="brand" href="#home" aria-label="LearnMojo home">
+            <a className="brand" href="/home" aria-label="LearnMojo home">
                 <img
                     alt="U+"
                     loading="lazy"
@@ -24,16 +24,16 @@ function Header({ copy, language, onLanguageChange }) {
             </a>
 
             <nav className="main-nav" aria-label="Primary navigation">
-                <a href="#home">{copy.home}</a>
-                <a href="#about">{copy.about}</a>
-                <a href="#programs">{copy.program}</a>
-                <a href="#resources">{copy.resources}</a>
-                <a href="#contact">{copy.contact}</a>
+                <a href="/home">{copy.home}</a>
+                <a href="/about">{copy.about}</a>
+                <a href="/home">{copy.program}</a>
+                <a href="/home">{copy.resources}</a>
+                <a href="/about">{copy.contact}</a>
             </nav>
 
             <div className="header-actions">
-                <a className="signin-button button" href="#signin">{copy.signIn}</a>
-                <a className="donate-button button" href="#join">{copy.donate}</a>
+                <a className="signin-button button" href="/home">{copy.signIn}</a>
+                <a className="donate-button button" href="/about">{copy.donate}</a>
 
                 <div className="language-selector">
                     <button

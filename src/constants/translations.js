@@ -20,6 +20,15 @@ export const translations = {
       cta: "Learn more",
       imageAlt: "Teacher and children learning with light bulbs",
     },
+    aboutPage: {
+      title: "About us",
+      storyLabel: "About LearnMojo",
+      story: "LearnMojo helps students discover math, science, technology, and engineering through guided adventures, creative problem-solving, and supportive teachers who make every lesson feel approachable.",
+      reviewsEyebrow: "What Students Say",
+      reviewsTitle: "Real Adventures, Real Results",
+      joinTitle: "Ready to Start Your Learning Adventure?",
+      joinCta: "Join LearnMojo",
+    },
     programsTitle: "Our STEM programs",
     programs: {
       math: {
@@ -82,6 +91,15 @@ export const translations = {
       text: "LearnMojo aide les élèves à explorer les mathématiques, les sciences, la technologie et l'ingénierie grâce à des cours interactifs animés par des enseignants bienveillants.",
       cta: "En savoir plus",
       imageAlt: "Enseignant et enfants apprenant avec des ampoules",
+    },
+    aboutPage: {
+      title: "À propos",
+      storyLabel: "À propos de LearnMojo",
+      story: "LearnMojo aide les élèves à découvrir les mathématiques, les sciences, la technologie et l'ingénierie grâce à des aventures guidées, à la résolution créative de problèmes et à des enseignants bienveillants.",
+      reviewsEyebrow: "Ce que disent les élèves",
+      reviewsTitle: "De vraies aventures, de vrais résultats",
+      joinTitle: "Prêt à commencer ton aventure d'apprentissage?",
+      joinCta: "Rejoindre LearnMojo",
     },
     programsTitle: "Nos programmes STIM",
     programs: {

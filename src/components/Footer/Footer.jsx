@@ -9,34 +9,34 @@ function Footer({ copy }) {
             <div className="footer-links" aria-label={copy.navigationLabel}>
                 <div>
                     <h2>{copy.home}</h2>
-                    <a href="#programs">{copy.programs}</a>
-                    <a href="#testimonials">{copy.testimonials}</a>
-                    <a href="#partners">{copy.partners}</a>
+                    <a href="/home">{copy.programs}</a>
+                    <a href="/about">{copy.testimonials}</a>
+                    <a href="/home">{copy.partners}</a>
                 </div>
                 <div>
                     <h2>{copy.about}</h2>
-                    <a href="#story">{copy.story}</a>
-                    <a href="#teachers">{copy.teachers}</a>
-                    <a href="#bookstore">{copy.bookstore}</a>
+                    <a href="/about">{copy.story}</a>
+                    <a href="/about">{copy.teachers}</a>
+                    <a href="/about">{copy.bookstore}</a>
                 </div>
                 <div id="join">
                     <h2>{copy.join}</h2>
-                    <a href="#registration">{copy.registration}</a>
-                    <a href="#faqs">{copy.faqs}</a>
-                    <a href="#contact">{copy.contact}</a>
+                    <a href="/about">{copy.registration}</a>
+                    <a href="/about">{copy.faqs}</a>
+                    <a href="/about">{copy.contact}</a>
                 </div>
                 <div>
                     <h2>{copy.follow}</h2>
-                    <a className="social-link" href="#instagram">
+                    <a className="social-link" href="/about">
                         <img src={instagramIcon} alt="" aria-hidden="true" />
                         <span>Instagram</span>
                     </a>
-                    <a className="social-link" href="#facebook">
+                    <a className="social-link" href="/about">
                         <img src={facebookIcon} alt="" aria-hidden="true" />
                         <span>Facebook</span>
                     </a>
-                    <a href="#wechat">WeChat</a>
-                    <a className="social-link" href="#linkedin">
+                    <a href="/about">WeChat</a>
+                    <a className="social-link" href="/about">
                         <img src={linkedinIcon} alt="" aria-hidden="true" />
                         <span>LinkedIn</span>
                     </a>
