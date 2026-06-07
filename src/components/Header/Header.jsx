@@ -1,6 +1,7 @@
 import { useState } from "react"
 import logoHeadSvg from "../../assets/svgs/logo-head.svg"
 import { languageOptions } from "../../constants/languageOptions"
+import { ROUTE_PATHS } from "../../router/routePaths"
 import "./Header.css"
 
 function Header({ copy, language, onLanguageChange }) {
@@ -14,7 +15,7 @@ function Header({ copy, language, onLanguageChange }) {
 
     return (
         <header className="site-header">
-            <a className="brand" href="/home" aria-label="LearnMojo home">
+            <a className="brand" href={ROUTE_PATHS.home} aria-label="LearnMojo home">
                 <img
                     alt="U+"
                     loading="lazy"
@@ -24,16 +25,16 @@ function Header({ copy, language, onLanguageChange }) {
             </a>
 
             <nav className="main-nav" aria-label="Primary navigation">
-                <a href="/home">{copy.home}</a>
-                <a href="/about">{copy.about}</a>
-                <a href="/home">{copy.program}</a>
-                <a href="/home">{copy.resources}</a>
-                <a href="/about">{copy.contact}</a>
+                <a href={ROUTE_PATHS.home}>{copy.home}</a>
+                <a href={ROUTE_PATHS.about}>{copy.about}</a>
+                <a href={ROUTE_PATHS.programs}>{copy.program}</a>
+                <a href={ROUTE_PATHS.resources}>{copy.resources}</a>
+                <a href={ROUTE_PATHS.contact}>{copy.contact}</a>
             </nav>
 
             <div className="header-actions">
-                <a className="signin-button button" href="/home">{copy.signIn}</a>
-                <a className="donate-button button" href="/about">{copy.donate}</a>
+                <a className="signin-button button" href={ROUTE_PATHS.home}>{copy.signIn}</a>
+                <a className="donate-button button" href={ROUTE_PATHS.contact}>{copy.donate}</a>
 
                 <div className="language-selector">
                     <button

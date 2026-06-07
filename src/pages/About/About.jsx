@@ -3,6 +3,7 @@ import bookIcon from "../../assets/svgs/Book_Icon.svg"
 import emc2Icon from "../../assets/svgs/E_MC2_Icon.svg"
 import mascotSvg from "../../assets/svgs/body_image_mascot.svg"
 import pencilIcon from "../../assets/svgs/Pencil_Icon.svg"
+import { ROUTE_PATHS } from "../../router/routePaths"
 import "./About.css"
 
 const reviews = [
@@ -71,7 +72,7 @@ function About({ copy }) {
         <span className="about-join__orb about-join__orb--left" aria-hidden="true" />
         <span className="about-join__orb about-join__orb--right" aria-hidden="true" />
         <h2 id="about-join-title">{copy.aboutPage.joinTitle}</h2>
-        <a className="about-join__button" href="/about">{copy.aboutPage.joinCta}</a>
+        <a className="about-join__button" href={ROUTE_PATHS.contact}>{copy.aboutPage.joinCta}</a>
       </section>
     </main>
   )
