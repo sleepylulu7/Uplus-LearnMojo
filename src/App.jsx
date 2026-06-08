@@ -10,7 +10,6 @@ import { onAuthStateChanged } from 'firebase/auth'
 import { authInstance } from './config/firebase.js'
 
 function App() { 
-  const { login, register, logout, loginWithGoogle, loginWithFacebook } = useAuth()
   const [language, setLanguage] = useState("en")
   const user = useAuthStore((state) => state.user)
   const setUser = useAuthStore((state) => state.setUser)

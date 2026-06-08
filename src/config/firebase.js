@@ -1,9 +1,8 @@
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 
-// TODO - Use Environment Variables for security
 const firebaseConfig = {
-    apiKey: "AIzaSyChRdhdDSBY9YKQtEgVSUEloTr5UC4k8I4",
+    apiKey: process.env.GOOGLE_API_KEY,
     authDomain: "learn-mojo.firebaseapp.com",
     databaseURL: "https://learn-mojo-default-rtdb.firebaseio.com",
     projectId: "learn-mojo",
