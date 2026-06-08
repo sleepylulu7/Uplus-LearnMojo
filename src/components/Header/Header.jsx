@@ -33,7 +33,7 @@ function Header({ copy, language, onLanguageChange }) {
 
             <div className="header-actions">
                 <a className="signin-button button" href="#signin">{copy.signIn}</a>
-                <a className="donate-button button" href="#join">{copy.donate}</a>
+                <a className="donate-button button" href="#join">{copy.signingUp}</a>
 
                 <div className="language-selector">
                     <button

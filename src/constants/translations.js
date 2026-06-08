@@ -8,6 +8,7 @@ export const translations = {
       contact: "Contact us",
       signIn: "Sign In",
       donate: "Donate now",
+      signingUp: "Create an account", 
     },
     hero: {
       title: "Learn & Fun",
@@ -71,6 +72,7 @@ export const translations = {
       contact: "Contact",
       signIn: "Connexion",
       donate: "Faire un don",
+      signingUp: "Créer un compte",
     },
     hero: {
       title: "Apprendre en s'amusant",
