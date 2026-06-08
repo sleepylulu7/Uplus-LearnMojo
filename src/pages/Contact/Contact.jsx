@@ -63,27 +63,25 @@ function Contact({ copy }) {
       <section className="contact-details" aria-label={contact.detailsLabel}>
         <div className="contact-details__panel">
           <div className="contact-details__list">
-            <div className="about-story__panel">
-              {items.map((item) => {
-                const icon = item.href ? (
-                  <a className="contact-item__icon" href={item.href} target="_blank" rel="noopener noreferrer" aria-label={contact.reviewLinkLabel}>
-                    {item.icon}
-                  </a>
-                ) : (
-                  <span className="contact-item__icon">{item.icon}</span>
-                )
+            {items.map((item) => {
+              const icon = item.href ? (
+                <a className="contact-item__icon" href={item.href} target="_blank" rel="noopener noreferrer" aria-label={contact.reviewLinkLabel}>
+                  {item.icon}
+                </a>
+              ) : (
+                <span className="contact-item__icon">{item.icon}</span>
+              )
 
-                return (
-                  <article className="contact-item" key={item.id}>
-                    {icon}
-                    <div>
-                      <h2>{item.title}</h2>
-                      <p>{item.text}</p>
-                    </div>
-                  </article>
-                )
-              })}
-            </div>
+              return (
+                <article className="contact-item" key={item.id}>
+                  {icon}
+                  <div>
+                    <h2>{item.title}</h2>
+                    <p>{item.text}</p>
+                  </div>
+                </article>
+              )
+            })}
           </div>
         </div>
         <iframe
