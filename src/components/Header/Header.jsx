@@ -33,8 +33,8 @@ function Header({ copy, language, onLanguageChange }) {
             </nav>
 
             <div className="header-actions">
-                <a className="signin-button button" href={ROUTE_PATHS.home}>{copy.signIn}</a>
-                <a className="donate-button button" href={ROUTE_PATHS.contact}>{copy.donate}</a>
+                <a className="signin-button button" href="#signin">{copy.signIn}</a>
+                <a className="createaccount-button button" href="#join">{copy.signingUp}</a>
 
                 <div className="language-selector">
                     <button
