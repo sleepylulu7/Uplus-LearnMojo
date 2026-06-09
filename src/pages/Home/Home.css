@@ -257,6 +257,10 @@
   background: var(--color-program-orange);
 }
 
+#about, #programs, #home {
+  scroll-margin-top: 100px;
+}
+
 @media (max-width: var(--breakpoint-mobile)) {
   .program-grid {
     grid-template-columns: 1fr;
