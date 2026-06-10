@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import "./App.css";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
@@ -10,6 +10,9 @@ import Login from "./pages/Auth/Login";
 function App() {
   const [language, setLanguage] = useState("en");
   const copy = translations[language];
+
+  const location = useLocation();
+  const hideFooter = location.pathname === "/signin";
 
   return (
     <div className="app">
@@ -24,7 +27,7 @@ function App() {
         <Route path="/signin" element={<Login copy={copy.auth} />} />
       </Routes>
 
-      <Footer copy={copy.footer} />
+      {!hideFooter && <Footer copy={copy.footer} />}
     </div>
   );
 }
