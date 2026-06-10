@@ -6,7 +6,7 @@ import Header from "./components/Header/Header";
 import { translations } from "./constants/translations";
 import Home from "./pages/Home/Home";
 import Login from "./pages/Auth/Login";
-import AppRouter from "./router/AppRouter"
+import AppRouter from "./router/AppRouter";
 
 function App() {
   const [language, setLanguage] = useState("en");
@@ -29,9 +29,12 @@ function App() {
       </Routes>
 
       {!hideFooter && <Footer copy={copy.footer} />}
-      <Header copy={copy.nav} language={language} onLanguageChange={setLanguage} />
+      <Header
+        copy={copy.nav}
+        language={language}
+        onLanguageChange={setLanguage}
+      />
       <AppRouter copy={copy} />
-      <Footer copy={copy.footer} />
     </div>
   );
 }
