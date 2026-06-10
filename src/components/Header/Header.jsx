@@ -3,6 +3,7 @@ import { useState } from "react";
 import logoHeadSvg from "../../assets/svgs/logo-head.svg";
 import { languageOptions } from "../../constants/languageOptions";
 import "./Header.css";
+import { ROUTE_PATHS } from "../../router/routePaths"
 
 function Header({ copy, language, onLanguageChange }) {
   const [isLanguageMenuOpen, setIsLanguageMenuOpen] = useState(false);
@@ -37,6 +38,28 @@ function Header({ copy, language, onLanguageChange }) {
         <a className="donate-button button" href="#join">
           {copy.donate}
         </a>
+    return (
+        <header className="site-header">
+            <a className="brand" href={ROUTE_PATHS.home} aria-label="LearnMojo home">
+                <img
+                    alt="U+"
+                    loading="lazy"
+                    decoding="async"
+                    src={logoHeadSvg} />
+                <span className="brand-name">LearnMojo</span>
+            </a>
+
+            <nav className="main-nav" aria-label="Primary navigation">
+                <a href={ROUTE_PATHS.home}>{copy.home}</a>
+                <a href={ROUTE_PATHS.about}>{copy.about}</a>
+                <a href={ROUTE_PATHS.programs}>{copy.program}</a>
+                <a href={ROUTE_PATHS.resources}>{copy.resources}</a>
+                <a href={ROUTE_PATHS.contact}>{copy.contact}</a>
+            </nav>
+
+            <div className="header-actions">
+                <a className="signin-button button" href="#signin">{copy.signIn}</a>
+                <a className="createaccount-button button" href="#join">{copy.signingUp}</a>
 
         <div className="language-selector">
           <button

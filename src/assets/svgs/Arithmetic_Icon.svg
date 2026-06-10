@@ -1,0 +1,22 @@
+<svg width="125" height="65" viewBox="0 0 125 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g opacity="0.5" fill="#E6D3D4">
+    <rect x="1" y="2" width="29" height="26" rx="5"/>
+    <rect x="33" y="2" width="29" height="26" rx="5"/>
+    <rect x="65" y="2" width="29" height="26" rx="5"/>
+    <rect x="97" y="2" width="27" height="26" rx="5"/>
+    <rect x="1" y="37" width="29" height="26" rx="5"/>
+    <rect x="33" y="37" width="29" height="26" rx="5"/>
+    <rect x="65" y="37" width="29" height="26" rx="5"/>
+    <rect x="97" y="37" width="27" height="26" rx="5"/>
+  </g>
+  <g opacity="0.95" stroke="#FF9934" stroke-width="3" stroke-linecap="round">
+    <path d="M9 15H22M15.5 8.5V21.5"/>
+    <path d="M41 15H54"/>
+    <path d="M73 9L86 22M86 9L73 22"/>
+    <path d="M105 12H116M105 19H116"/>
+    <path d="M9 50H22M15.5 43.5V56.5"/>
+    <path d="M41 50H54"/>
+    <path d="M73 44L86 57M86 44L73 57"/>
+    <path d="M105 47H116M105 54H116"/>
+  </g>
+</svg>
