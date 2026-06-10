@@ -29,11 +29,7 @@ function App() {
       </Routes>
 
       {!hideFooter && <Footer copy={copy.footer} />}
-      <Header
-        copy={copy.nav}
-        language={language}
-        onLanguageChange={setLanguage}
-      />
+
       <AppRouter copy={copy} />
     </div>
   );
