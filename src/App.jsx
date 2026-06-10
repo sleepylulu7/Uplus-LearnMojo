@@ -6,7 +6,6 @@ import Header from "./components/Header/Header";
 import { translations } from "./constants/translations";
 import Home from "./pages/Home/Home";
 import Login from "./pages/Auth/Login";
-import AppRouter from "./router/AppRouter";
 
 function App() {
   const [language, setLanguage] = useState("en");
@@ -29,8 +28,6 @@ function App() {
       </Routes>
 
       {!hideFooter && <Footer copy={copy.footer} />}
-
-      <AppRouter copy={copy} />
     </div>
   );
 }
