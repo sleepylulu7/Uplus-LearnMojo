@@ -48,19 +48,23 @@ export const translations = {
     programs: {
       math: {
         title: "Math",
-        description: "Build confidence with number sense, puzzles, and guided problem-solving.",
+        description:
+          "Build confidence with number sense, puzzles, and guided problem-solving.",
       },
       science: {
         title: "Science",
-        description: "Explore experiments, observations, and discovery projects with mentors.",
+        description:
+          "Explore experiments, observations, and discovery projects with mentors.",
       },
       technology: {
         title: "Technology",
-        description: "Create digital projects while learning logic, tools, and creative coding.",
+        description:
+          "Create digital projects while learning logic, tools, and creative coding.",
       },
       engineering: {
         title: "Engineering",
-        description: "Design, build, test, and improve hands-on solutions to real challenges.",
+        description:
+          "Design, build, test, and improve hands-on solutions to real challenges.",
       },
       letsPlay: "Let's play",
     },
@@ -84,6 +88,37 @@ export const translations = {
       emailPlaceholder: "Email Address",
       subscribe: "Subscribe",
       copyright: "Copyright 2026 © All rights reserved.",
+    },
+    auth: {
+      titles: {
+        register: "Register",
+        login: "Login",
+      },
+      fields: {
+        emailOrUsername: "Email or Username",
+        email: "Email",
+        username: "Username",
+        password: "Password",
+        confirmPassword: "Confirm Password",
+      },
+      placeholder: {
+        email: "contact@upluseducation.com",
+        username: "jessy1234",
+      },
+      actions: {
+        forgotPassword: "Forgot password ?",
+        signup: "Sign Up \u2192",
+        signin: "Sign In \u2192",
+      },
+      socialAuth: {
+        google: "Google",
+        facebook: "Facebook",
+      },
+      separators: {
+        social: "OR",
+        loginText: "Already have an account?",
+        login: "Log in",
+      },
     },
   },
   fr: {
@@ -135,19 +170,23 @@ export const translations = {
     programs: {
       math: {
         title: "Maths",
-        description: "Renforce la confiance avec les nombres, les énigmes et la résolution guidée de problèmes.",
+        description:
+          "Renforce la confiance avec les nombres, les énigmes et la résolution guidée de problèmes.",
       },
       science: {
         title: "Sciences",
-        description: "Explore les expériences, les observations et les projets de découverte avec des mentors.",
+        description:
+          "Explore les expériences, les observations et les projets de découverte avec des mentors.",
       },
       technology: {
         title: "Technologie",
-        description: "Crée des projets numériques tout en apprenant la logique, les outils et le codage créatif.",
+        description:
+          "Crée des projets numériques tout en apprenant la logique, les outils et le codage créatif.",
       },
       engineering: {
         title: "Ingénierie",
-        description: "Conçoit, construit, teste et améliore des solutions pratiques à des défis concrets.",
+        description:
+          "Conçoit, construit, teste et améliore des solutions pratiques à des défis concrets.",
       },
       letsPlay: "Jouons",
     },
@@ -172,5 +211,36 @@ export const translations = {
       subscribe: "S'abonner",
       copyright: "Copyright 2026 © Tous droits réservés.",
     },
+    auth: {
+      titles: {
+        register: "Registre",
+        login: "Se connecter",
+      },
+      fields: {
+        emailOrUsername: "Email ou nom d'utilisateur",
+        email: "Email",
+        username: "Nom d'utilisateur",
+        password: "Mot de passe",
+        confirmPassword: "Confirmez le mot de passe",
+      },
+      placeholder: {
+        email: "contact@upluseducation.com",
+        username: "jessy1234",
+      },
+      actions: {
+        forgotPassword: "Mot de passe oublié ?",
+        signup: "S'inscrire \u2192",
+        signin: "Se connecter \u2192",
+      },
+      socialAuth: {
+        google: "Google",
+        facebook: "Facebook",
+      },
+      separators: {
+        social: "OU",
+        loginText: "Vous avez déjà un compte?",
+        login: "Se connecter",
+      },
+    },
   },
-}
+};
