@@ -29,8 +29,6 @@ function App() {
       </Routes>
 
       {!hideFooter && <Footer copy={copy.footer} />}
-
-      <AppRouter copy={copy} />
     </div>
   );
 }
