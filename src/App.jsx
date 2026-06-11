@@ -23,12 +23,8 @@ function App() {
         onLanguageChange={setLanguage}
       />
 
-      <Routes>
-        <Route path="/" element={<Home copy={copy} />} />
-        <Route path="/signin" element={<Login copy={copy.auth} />} />
-      </Routes>
-
-      {!hideFooter && <Footer copy={copy.footer} />}
+      <AppRouter copy={copy} />
+      <Footer copy={copy.footer} />
     </div>
   );
 }
