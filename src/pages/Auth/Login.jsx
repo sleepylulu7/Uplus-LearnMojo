@@ -3,8 +3,6 @@ import googleSvg from "../../assets/icons/google.svg";
 import facebookSvg from "../../assets/icons/facebook_blue.svg";
 import "./auth.css";
 
-const hideFooter = location.pathname === "/signin";
-
 function Login({ copy }) {
   return (
     <main id="auth" className="auth-page">

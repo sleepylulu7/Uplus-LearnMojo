@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { useState } from "react";
 import logoHeadSvg from "../../assets/svgs/logo-head.svg";
 import { languageOptions } from "../../constants/languageOptions";
@@ -32,9 +31,9 @@ function Header({ copy, language, onLanguageChange }) {
       </nav>
 
       <div className="header-actions">
-        <Link to="/signin" className="signin-button button">
+        <a href={ROUTE_PATHS.signin} className="signin-button button">
           {copy.signIn}
-        </Link>
+        </a>
         <a className="donate-button button" href="#join">
           {copy.donate}
         </a>

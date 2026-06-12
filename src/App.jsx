@@ -1,19 +1,17 @@
 import { useState } from "react";
-import { Routes, Route, useLocation } from "react-router-dom";
 import "./App.css";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import { translations } from "./constants/translations";
-import Home from "./pages/Home/Home";
-import Login from "./pages/Auth/Login";
 import AppRouter from "./router/AppRouter";
+import { ROUTE_PATHS } from "./router/routePaths";
 
 function App() {
   const [language, setLanguage] = useState("en");
+  const [currentPath, setCurrentPath] = useState(window.location.pathname);
   const copy = translations[language];
 
-  const location = useLocation();
-  const hideFooter = location.pathname === "/signin";
+  const hideFooter = currentPath === ROUTE_PATHS.signin;
 
   return (
     <div className="app">
@@ -23,14 +21,9 @@ function App() {
         onLanguageChange={setLanguage}
       />
 
-      <Routes>
-        <Route path="/" element={<Home copy={copy} />} />
-        <Route path="/signin" element={<Login copy={copy.auth} />} />
-      </Routes>
-
       {!hideFooter && <Footer copy={copy.footer} />}
 
-      <AppRouter copy={copy} />
+      <AppRouter copy={copy} onRouteChange={setCurrentPath} />
     </div>
   );
 }

@@ -4,4 +4,5 @@ export const ROUTE_PATHS = {
   programs: "/programs",
   resources: "/resources",
   contact: "/contact",
+  signin: "/signin",
 }

@@ -1,6 +1,7 @@
 import About from "../pages/About/About"
 import Contact from "../pages/Contact/Contact"
 import Home from "../pages/Home/Home"
+import Login from "../pages/Auth/Login"
 import Programs from "../pages/Programs/Programs"
 import Resources from "../pages/Resources/Resources"
 import { ROUTE_PATHS } from "./routePaths"
@@ -25,6 +26,10 @@ export const ROUTES = {
   contact: {
     path: ROUTE_PATHS.contact,
     Component: Contact,
+  },
+  signin: {
+    path: ROUTE_PATHS.signin,
+    Component: Login,
   },
 }
 

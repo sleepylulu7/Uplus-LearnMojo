@@ -3,9 +3,12 @@ import { DEFAULT_ROUTE, getRouteByPath, isKnownRoute } from "./routes"
 
 const getCurrentRoute = () => getRouteByPath(window.location.pathname)
 
-function AppRouter({ copy }) {
+function AppRouter({ copy, onRouteChange }) {
   const [currentRoute, setCurrentRoute] = useState(getCurrentRoute)
   const CurrentPage = currentRoute.Component
+  useEffect(() => {
+    onRouteChange?.(currentRoute.path)
+  }, [currentRoute.path, onRouteChange])
 
   useEffect(() => {
     if (window.location.pathname === "/") {
@@ -13,7 +16,8 @@ function AppRouter({ copy }) {
     }
 
     const updateRoute = () => {
-      setCurrentRoute(getCurrentRoute())
+      const route = getCurrentRoute()
+      setCurrentRoute(route)
     }
 
     const handleRouteClick = (event) => {
