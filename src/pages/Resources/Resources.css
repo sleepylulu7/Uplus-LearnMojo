@@ -1,0 +1,8 @@
+.resources-page {
+  min-height: 50vh;
+  background-image: url("../../assets/svgs/background.svg");
+  background-position: center 48.5rem;
+  background-repeat: no-repeat;
+  background-size: auto;
+  overflow: hidden;
+}

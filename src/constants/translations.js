@@ -8,6 +8,7 @@ export const translations = {
       contact: "Contact us",
       signIn: "Sign In",
       donate: "Donate now",
+      signingUp: "Create an account", 
     },
     hero: {
       title: "Learn & Fun",
@@ -20,23 +21,50 @@ export const translations = {
       cta: "Learn more",
       imageAlt: "Teacher and children learning with light bulbs",
     },
+    aboutPage: {
+      title: "About us",
+      storyLabel: "About LearnMojo",
+      story: "LearnMojo helps students discover math, science, technology, and engineering through guided adventures, creative problem-solving, and supportive teachers who make every lesson feel approachable.",
+      reviewsEyebrow: "What Students Say",
+      reviewsTitle: "Real Adventures, Real Results",
+      joinTitle: "Ready to Start Your Learning Adventure?",
+      joinCta: "Join LearnMojo",
+    },
+    contactPage: {
+      title: "Contact us",
+      detailsLabel: "U Plus Education contact details",
+      addressTitle: "Address",
+      address: "205 Torbay Rd #4, Markham, ON L3R 3W4",
+      phoneTitle: "Phone",
+      phone: "+1 - 647 668 7038",
+      emailTitle: "Email",
+      email: "info@upluseducation.ca",
+      reviewTitle: "Write us a review",
+      reviewText: "Click the icon!",
+      reviewLinkLabel: "Open U Plus Education on Google Maps",
+      mapTitle: "Map to U Plus Education",
+    },
     programsTitle: "Our STEM programs",
     programs: {
       math: {
         title: "Math",
-        description: "Build confidence with number sense, puzzles, and guided problem-solving.",
+        description:
+          "Build confidence with number sense, puzzles, and guided problem-solving.",
       },
       science: {
         title: "Science",
-        description: "Explore experiments, observations, and discovery projects with mentors.",
+        description:
+          "Explore experiments, observations, and discovery projects with mentors.",
       },
       technology: {
         title: "Technology",
-        description: "Create digital projects while learning logic, tools, and creative coding.",
+        description:
+          "Create digital projects while learning logic, tools, and creative coding.",
       },
       engineering: {
         title: "Engineering",
-        description: "Design, build, test, and improve hands-on solutions to real challenges.",
+        description:
+          "Design, build, test, and improve hands-on solutions to real challenges.",
       },
       letsPlay: "Let's play",
     },
@@ -61,6 +89,37 @@ export const translations = {
       subscribe: "Subscribe",
       copyright: "Copyright 2026 © All rights reserved.",
     },
+    auth: {
+      titles: {
+        register: "Register",
+        login: "Login",
+      },
+      fields: {
+        emailOrUsername: "Email or Username",
+        email: "Email",
+        username: "Username",
+        password: "Password",
+        confirmPassword: "Confirm Password",
+      },
+      placeholder: {
+        email: "contact@upluseducation.com",
+        username: "jessy1234",
+      },
+      actions: {
+        forgotPassword: "Forgot password ?",
+        signup: "Sign Up \u2192",
+        signin: "Sign In \u2192",
+      },
+      socialAuth: {
+        google: "Google",
+        facebook: "Facebook",
+      },
+      separators: {
+        social: "OR",
+        loginText: "Already have an account?",
+        login: "Log in",
+      },
+    },
   },
   fr: {
     nav: {
@@ -71,6 +130,7 @@ export const translations = {
       contact: "Contact",
       signIn: "Connexion",
       donate: "Faire un don",
+      signingUp: "Créer un compte",
     },
     hero: {
       title: "Apprendre en s'amusant",
@@ -83,23 +143,50 @@ export const translations = {
       cta: "En savoir plus",
       imageAlt: "Enseignant et enfants apprenant avec des ampoules",
     },
+    aboutPage: {
+      title: "À propos",
+      storyLabel: "À propos de LearnMojo",
+      story: "LearnMojo aide les élèves à découvrir les mathématiques, les sciences, la technologie et l'ingénierie grâce à des aventures guidées, à la résolution créative de problèmes et à des enseignants bienveillants.",
+      reviewsEyebrow: "Ce que disent les élèves",
+      reviewsTitle: "De vraies aventures, de vrais résultats",
+      joinTitle: "Prêt à commencer ton aventure d'apprentissage?",
+      joinCta: "Rejoindre LearnMojo",
+    },
+    contactPage: {
+      title: "Contact",
+      detailsLabel: "Coordonnées de U Plus Education",
+      addressTitle: "Adresse",
+      address: "205 Torbay Rd #4, Markham, ON L3R 3W4",
+      phoneTitle: "Téléphone",
+      phone: "+1 - 647 668 7038",
+      emailTitle: "E-mail",
+      email: "info@upluseducation.ca",
+      reviewTitle: "Laissez-nous un avis",
+      reviewText: "Cliquez sur l'icône!",
+      reviewLinkLabel: "Ouvrir U Plus Education dans Google Maps",
+      mapTitle: "Carte vers U Plus Education",
+    },
     programsTitle: "Nos programmes STIM",
     programs: {
       math: {
         title: "Maths",
-        description: "Renforce la confiance avec les nombres, les énigmes et la résolution guidée de problèmes.",
+        description:
+          "Renforce la confiance avec les nombres, les énigmes et la résolution guidée de problèmes.",
       },
       science: {
         title: "Sciences",
-        description: "Explore les expériences, les observations et les projets de découverte avec des mentors.",
+        description:
+          "Explore les expériences, les observations et les projets de découverte avec des mentors.",
       },
       technology: {
         title: "Technologie",
-        description: "Crée des projets numériques tout en apprenant la logique, les outils et le codage créatif.",
+        description:
+          "Crée des projets numériques tout en apprenant la logique, les outils et le codage créatif.",
       },
       engineering: {
         title: "Ingénierie",
-        description: "Conçoit, construit, teste et améliore des solutions pratiques à des défis concrets.",
+        description:
+          "Conçoit, construit, teste et améliore des solutions pratiques à des défis concrets.",
       },
       letsPlay: "Jouons",
     },
@@ -124,5 +211,36 @@ export const translations = {
       subscribe: "S'abonner",
       copyright: "Copyright 2026 © Tous droits réservés.",
     },
+    auth: {
+      titles: {
+        register: "Registre",
+        login: "Se connecter",
+      },
+      fields: {
+        emailOrUsername: "Email ou nom d'utilisateur",
+        email: "Email",
+        username: "Nom d'utilisateur",
+        password: "Mot de passe",
+        confirmPassword: "Confirmez le mot de passe",
+      },
+      placeholder: {
+        email: "contact@upluseducation.com",
+        username: "jessy1234",
+      },
+      actions: {
+        forgotPassword: "Mot de passe oublié ?",
+        signup: "S'inscrire \u2192",
+        signin: "Se connecter \u2192",
+      },
+      socialAuth: {
+        google: "Google",
+        facebook: "Facebook",
+      },
+      separators: {
+        social: "OU",
+        loginText: "Vous avez déjà un compte?",
+        login: "Se connecter",
+      },
+    },
   },
-}
+};
