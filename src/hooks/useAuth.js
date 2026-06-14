@@ -1,12 +1,12 @@
-import { 
-    createUserWithEmailAndPassword, 
-    signInWithEmailAndPassword, 
+import {
+    createUserWithEmailAndPassword,
+    signInWithEmailAndPassword,
     updateProfile,
     signOut,
     GoogleAuthProvider,
     FacebookAuthProvider,
     signInWithPopup
- } from "firebase/auth";
+} from "firebase/auth";
 import { authInstance } from "../config/firebase";
 
 export const useAuth = () => {
@@ -23,7 +23,7 @@ export const useAuth = () => {
      */
     const login = async (email, password) => {
         try {
-           return signInWithEmailAndPassword(authInstance, email, password)
+            return signInWithEmailAndPassword(authInstance, email, password)
         } catch (error) {
             throw new Error(error);
         }
@@ -46,7 +46,7 @@ export const useAuth = () => {
                 displayName: username
             });
         } catch (error) {
-            throw new Error(error);   
+            throw new Error(error);
         }
     }
 
@@ -60,23 +60,21 @@ export const useAuth = () => {
         try {
             await signOut(authInstance)
         } catch (error) {
-            throw new Error(error);  
+            throw new Error(error);
         }
     }
 
-    const loginWithGoogle =  async () => {
+    const loginWithGoogle = async () => {
         try {
             const result = await signInWithPopup(authInstance, googleProvider)
-            console.log(result)
         } catch (error) {
             throw new Error(error);
         }
     }
 
-    const loginWithFacebook =  async () => {
+    const loginWithFacebook = async () => {
         try {
             const result = await signInWithPopup(authInstance, facebookProvider)
-            console.log(result)
         } catch (error) {
             throw new Error(error);
         }
@@ -84,9 +82,9 @@ export const useAuth = () => {
 
     return {
         login,
-        loginWithGoogle, 
+        loginWithGoogle,
         loginWithFacebook,
-        register, 
+        register,
         logout
     }
 }
