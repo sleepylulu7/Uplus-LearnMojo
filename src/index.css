@@ -1,6 +1,7 @@
 @import "./styles/uikit.css";
 
 :root {
+  overflow-x: hidden;
   font-family: var(--font-family-primary);
   font-size: var(--root-font-size);
   line-height: 1.5;

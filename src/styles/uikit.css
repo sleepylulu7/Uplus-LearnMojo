@@ -4,7 +4,10 @@
   font-weight: 400;
   font-display: swap;
   src: url("../assets/fonts/baloo-thambi-2-latin-400.woff2") format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
@@ -13,7 +16,10 @@
   font-weight: 300 700;
   font-display: swap;
   src: url("../assets/fonts/dm-sans-latin-ext-300-700.woff2") format("woff2");
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  unicode-range:
+    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
+    U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
 @font-face {
@@ -22,7 +28,10 @@
   font-weight: 300 700;
   font-display: swap;
   src: url("../assets/fonts/dm-sans-latin-300-700.woff2") format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
@@ -31,7 +40,10 @@
   font-weight: 400;
   font-display: swap;
   src: url("../assets/fonts/fredoka-one-latin-400.woff2") format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
@@ -40,7 +52,10 @@
   font-weight: 700;
   font-display: swap;
   src: url("../assets/fonts/montserrat-latin-ext-700.woff2") format("woff2");
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  unicode-range:
+    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
+    U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
 @font-face {
@@ -49,7 +64,10 @@
   font-weight: 700;
   font-display: swap;
   src: url("../assets/fonts/montserrat-latin-700.woff2") format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
 }
 
 :root {
@@ -63,6 +81,7 @@
   --font-weight-light: 300;
   --font-weight-regular: 400;
   --font-weight-medium: 500;
+  --font-weight-heavy: 600;
   --font-weight-bold: 700;
 
   --font-size-header: 1rem;
@@ -102,7 +121,9 @@
   --button-large-height: 4.6875rem;
   --button-large-radius: 3.125rem;
   --button-large-border-width: 0.125rem;
-  --button-large-shadow: drop-shadow(0 0.25rem 0.25rem var(--color-shadow-button));
+  --button-large-shadow: drop-shadow(
+    0 0.25rem 0.25rem var(--color-shadow-button)
+  );
 
   --button-small-min-width: 8.3125rem;
   --button-small-height: 2.625rem;
@@ -131,4 +152,25 @@
   --page-min-width: 20rem;
   --focus-outline: 0.1875rem solid var(--color-brand-orange);
   --focus-outline-offset: 0.1875rem;
+
+  --font-size-auth-label: 1.1rem;
+  --font-size-auth-button: 1.2rem;
+  --font-size-social-button: 0.925rem;
+
+  --container-auth-xs: 200px;
+  --container-auth-sm: 400px;
+  --container-auth-md: 600px;
+  --container-auth-lg: 900px;
+
+  --auth-input-border-size-sm: 2px;
+  --auth-input-radius-sm: 0.5rem;
+
+  --color-auth-input: rgb(247, 247, 247);
+  --color-auth-separtors: #868686;
+  --color-social-button-primary: rgb(240, 239, 239);
+
+  --button-social-small-min-width: 16.3125rem;
+  --button-social-small-height: 2.525rem;
+  --button-social-small-radius: 20px;
+  --button-social-border-width: 0.12rem;
 }
