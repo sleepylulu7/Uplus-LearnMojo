@@ -3,8 +3,10 @@ import Contact from "../pages/Contact/Contact";
 import Home from "../pages/Home/Home";
 import Programs from "../pages/Programs/Programs";
 import Resources from "../pages/Resources/Resources";
+import Minigame from "../pages/Minigame";
 import Signin from "../pages/Auth/Login";
 import { ROUTE_PATHS } from "./routePaths";
+
 
 export const ROUTES = {
   home: {
@@ -27,9 +29,14 @@ export const ROUTES = {
     path: ROUTE_PATHS.contact,
     Component: Contact,
   },
+  
   signin: {
     path: ROUTE_PATHS.signin,
     Component: Signin,
+  },
+  minigame :{
+  path: "/minigame",
+  Component: Minigame,
   },
 };
 

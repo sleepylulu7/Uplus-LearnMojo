@@ -5,6 +5,8 @@ import { languageOptions } from "../../constants/languageOptions";
 import "./Header.css";
 import { ROUTE_PATHS } from "../../router/routePaths";
 
+
+
 function Header({ copy, language, onLanguageChange }) {
   const [isLanguageMenuOpen, setIsLanguageMenuOpen] = useState(false);
   const currentLanguage = languageOptions.find(
@@ -29,6 +31,7 @@ function Header({ copy, language, onLanguageChange }) {
         <a href="#programs">{copy.program}</a>
         <a href="#resources">{copy.resources}</a>
         <a href="#contact">{copy.contact}</a>
+        <Link to="/minigame">Mini Game</Link>
       </nav>
 
       <div className="header-actions">

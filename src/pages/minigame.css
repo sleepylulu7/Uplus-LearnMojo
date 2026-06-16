@@ -1,0 +1,164 @@
+.minigame-page {
+  min-height: 80vh;
+  padding: 60px 24px 90px;
+  background-color: #fff7f2;
+  text-align: center;
+}
+
+.minigame-header h1 {
+  font-size: 28px;
+  margin-bottom: 24px;
+  color: #111;
+}
+
+.minigame-header p {
+  max-width: 760px;
+  margin: 0 auto 50px;
+  text-align: left;
+  font-size: 18px;
+  font-weight: 600;
+  color: #111;
+}
+
+.game-grid {
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(240px, 1fr));
+  gap: 70px 90px;
+}
+
+.mini-game-card {
+  position: relative;
+  min-height: 250px;
+  padding: 32px 28px;
+  border-radius: 4px;
+  box-shadow: 0 6px 0 rgba(0, 0, 0, 0.12);
+  text-align: center;
+}
+
+.mini-game-card h2 {
+  margin: 0 0 24px;
+  font-size: 20px;
+  color: #111;
+}
+
+.mini-game-card p,
+.mini-game-card span {
+  display: block;
+  margin-bottom: 14px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #111;
+}
+
+.card-icon {
+  position: absolute;
+  top: 18px;
+  right: 20px;
+  font-size: 36px;
+}
+
+.mini-game-card button {
+  position: absolute;
+  left: 50%;
+  bottom: 28px;
+  transform: translateX(-50%);
+  min-width: 100px;
+  padding: 8px 24px;
+  border: none;
+  border-radius: 999px;
+  background-color: #ffc45c;
+  color: #111;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.mini-game-card button:hover {
+  background-color: #ffad2f;
+}
+
+.puzzles-card {
+  background-color: #dceefa;
+}
+
+.math-card {
+  background-color: #f3d9f8;
+}
+
+@media (max-width: 700px) {
+  .game-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .minigame-header p {
+    text-align: center;
+  }
+}
+.number-match-game {
+  max-width: 600px;
+  margin: 70px auto 0;
+  padding: 32px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.number-match-game h2 {
+  font-size: 28px;
+  margin-bottom: 12px;
+}
+
+.counting-objects {
+  font-size: 64px;
+  margin: 28px 0;
+}
+
+.answer-options {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.answer-options button {
+  padding: 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: #ff8c2f;
+  color: white;
+  font-size: 22px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.answer-options button:hover {
+  background-color: #e67520;
+}
+
+.animal-match-game{
+    max-width: 600px;
+    margin: 70px auto 0;
+    padding: 32px;
+    border-radius: 8px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.animal-match-game h2{
+    font-size: 28px;
+    margin-bottom: 12px;
+
+}
+
+.animal-picture {
+ font-size: 100px;
+ line-height: 1;
+ margin: 28px 0;
+}
+
+.score{
+    text-align: right;
+    font-weight: bold;
+    color: #004b83;
+}
