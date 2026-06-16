@@ -15,6 +15,17 @@ function App() {
   const location = useLocation();
   const hideFooter = location.pathname === "/signin";
 
+  const setUser = useAuthStore((state) => state.setUser)
+
+  useEffect(() => {
+    const unsubscribe = onAuthStateChanged(authInstance, (user) => {
+      setUser(user)
+    })
+
+    return unsubscribe
+  }, [setUser])
+
+
   return (
     <div className="app">
       <Header
