@@ -10,39 +10,41 @@ function Register({ copy }) {
         <img id="mascot" src={mascotSvg} alt="" aria-hidden="true" />
       </div>
       <div className="auth-heading">
-        <h1>{copy.titles.register}</h1>
+        <h1>{copy.auth.titles.register}</h1>
       </div>
 
       <div className="auth-form-content">
         <form className="auth-form">
-          <label for="email">{copy.fields.email}</label>
-          <input id="email" placeholder={copy.placeholder.email} />
+          <label for="email">{copy.auth.fields.email}</label>
+          <input id="email" placeholder={copy.auth.placeholder.email} />
 
-          <label for="username">{copy.fields.username}</label>
-          <input id="username" placeholder={copy.placeholder.username} />
+          <label for="username">{copy.auth.fields.username}</label>
+          <input id="username" placeholder={copy.auth.placeholder.username} />
 
-          <label for="password">{copy.fields.password}</label>
+          <label for="password">{copy.auth.fields.password}</label>
           <input id="password" type="password" />
 
-          <label for="confirm-password">{copy.fields.confirmPassword}</label>
+          <label for="confirm-password">
+            {copy.auth.fields.confirmPassword}
+          </label>
           <input id="confirm-password" type="password" />
 
           <button className="signin-button" type="submit">
-            {copy.actions.signup}
+            {copy.auth.actions.signup}
           </button>
         </form>
       </div>
 
       <div className="separator-content">
         <hr />
-        <p>{copy.separators.social}</p>
+        <p>{copy.auth.separators.social}</p>
         <hr />
       </div>
 
       <div className="social-signup">
         <button type="button" className="social-btn">
           <img src={googleSvg} alt="google icon" className="google-icon" />
-          {copy.socialAuth.google}
+          {copy.auth.socialAuth.google}
         </button>
         <button type="button" className="social-btn">
           <img
@@ -50,13 +52,13 @@ function Register({ copy }) {
             alt="facebook icon"
             className="facebook-icon"
           />
-          {copy.socialAuth.facebook}
+          {copy.auth.socialAuth.facebook}
         </button>
       </div>
 
       <div className="separator-login">
-        <span>{copy.separators.loginText}</span>
-        <a href="#login">{copy.separators.login}</a>
+        <span>{copy.auth.separators.loginText}</span>
+        <a href="#login">{copy.auth.separators.login}</a>
       </div>
     </main>
   );
