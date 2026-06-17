@@ -5,8 +5,8 @@ import Programs from "../pages/Programs/Programs";
 import Resources from "../pages/Resources/Resources";
 import Minigame from "../pages/Minigame";
 import Signin from "../pages/Auth/Login";
+import Signup from "../pages/Auth/Register";
 import { ROUTE_PATHS } from "./routePaths";
-
 
 export const ROUTES = {
   home: {
@@ -29,14 +29,17 @@ export const ROUTES = {
     path: ROUTE_PATHS.contact,
     Component: Contact,
   },
-  
   signin: {
-    path: ROUTE_PATHS.signin,
+    path: ROUTE_PATHS.signIn,
     Component: Signin,
   },
-  minigame :{
-  path: "/minigame",
-  Component: Minigame,
+  signup: {
+    path: ROUTE_PATHS.signUp,
+    Component: Signup,
+  },
+  minigame: {
+    path: "/minigame",
+    Component: Minigame,
   },
 };
 
