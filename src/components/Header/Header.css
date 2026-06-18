@@ -158,3 +158,27 @@
     width: 100%;
   }
 }
+.nav-dropdown{
+  position: relative;
+}
+.nav-dropdown-button{
+  background: none;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+}
+.nav-dropdown-menu{
+  display :none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width:140px;
+  background: white;
+  box-shadow: 0 8px 20px rgba(0, 0, 0,0.12);
+  padding: 10px;
+  z-index: 10;
+}
+
+.nav-dropdown:hover .nav-dropdown-menu{
+  display:block;
+}
