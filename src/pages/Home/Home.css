@@ -4,15 +4,17 @@
   background-repeat: no-repeat;
   background-size: auto;
   overflow: hidden;
+  
 }
 
 .hero-section {
   isolation: isolate;
-  margin: 0;
+  margin: 0 auto;
   min-height: var(--hero-section-min-height);
   overflow: hidden;
   position: relative;
-  width: 100rem;
+  width: 100%;
+  max-width: 100rem;
   margin-bottom: var(--section-gap);
 }
 
@@ -120,11 +122,12 @@
 
 .about-section {
   isolation: isolate;
-  margin: 0;
+  margin: 0 auto;
   min-height: var(--about-section-min-height);
   overflow: hidden;
   position: relative;
-  width: 100rem;
+  width: 100%;
+  max-width:100rem;
   margin-bottom: var(--section-gap);
 }
 
@@ -171,10 +174,11 @@
 
 .programs-section {
   isolation: isolate;
-  margin: 0;
+  margin: 0 auto;
   overflow: hidden;
   position: relative;
-  width: 100rem;
+  width: 100%;
+  max-width: 100rem;
   margin-bottom: var(--section-gap-before-footer);
 }
 

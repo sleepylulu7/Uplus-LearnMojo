@@ -28,14 +28,16 @@ function Header({ copy, language, onLanguageChange }) {
         <a href={ROUTE_PATHS.programs}>{copy.program}</a>
         <a href={ROUTE_PATHS.resources}>{copy.resources}</a>
         <a href={ROUTE_PATHS.contact}>{copy.contact}</a>
-      
 
-      <div className="nav-dropdown ">
-        <button className="nav-dropdown-button">Game</button>
-        <div className="nav-dropdown-menu">
-          <a href="/minigame">Mini Game</a>
+        <div className="nav-dropdown ">
+          <button className="nav-dropdown-button">
+            Game
+            <span className="dropdown-arrow"></span>
+          </button>
+          <div className="nav-dropdown-menu">
+            <a href="/minigame">Mini Game</a>
+          </div>
         </div>
-      </div>
       </nav>
 
       <div className="header-actions">
