@@ -2,6 +2,7 @@ import About from "../pages/About/About";
 import Contact from "../pages/Contact/Contact";
 import Home from "../pages/Home/Home";
 import Programs from "../pages/Programs/Programs";
+import CardMatchPage from "../pages/Programs/Games/CardMatchPage";
 import Resources from "../pages/Resources/Resources";
 import Minigame from "../pages/Minigame";
 import Signin from "../pages/Auth/Login";
@@ -20,6 +21,10 @@ export const ROUTES = {
   programs: {
     path: ROUTE_PATHS.programs,
     Component: Programs,
+  },
+  programsCardMatch: {
+    path: ROUTE_PATHS.programsCardMatch,
+    Component: CardMatchPage,
   },
   resources: {
     path: ROUTE_PATHS.resources,

@@ -1,8 +1,102 @@
 .programs-page {
-  min-height: 50vh;
+  min-height: 80vh;
   background-image: url("../../assets/svgs/background.svg");
   background-position: center 48.5rem;
   background-repeat: no-repeat;
   background-size: auto;
   overflow: hidden;
+  text-align: center;
+}
+
+.programs-header h1 {
+  margin: 0 0 24px;
+  color: #111;
+  font-size: 28px;
+}
+
+.programs-header p {
+  max-width: 760px;
+  margin: 0 auto 50px;
+  color: #111;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: left;
+}
+
+.programs-grid {
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(240px, 1fr));
+  gap: 70px 90px;
+}
+
+.program-card {
+  position: relative;
+  display: block;
+  min-height: 250px;
+  padding: 32px 28px;
+  border-radius: 4px;
+  box-shadow: 0 6px 0 rgba(0, 0, 0, 0.12);
+  color: #111;
+  text-align: center;
+  text-decoration: none;
+}
+
+.program-card h2 {
+  margin: 0 0 24px;
+  color: #111;
+  font-size: 20px;
+}
+
+.program-card p {
+  display: block;
+  margin-bottom: 14px;
+  color: #111;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.program-card span {
+  position: absolute;
+  left: 50%;
+  bottom: 28px;
+  transform: translateX(-50%);
+  min-width: 100px;
+  padding: 8px 24px;
+  border-radius: 999px;
+  background-color: #ffc45c;
+  color: #111;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.program-card:hover span {
+  background-color: #ffad2f;
+}
+
+.program-card-icon {
+  position: absolute;
+  top: 18px;
+  right: 20px;
+  font-size: 36px;
+}
+
+.card-match-program-card {
+  background-color: #dff4df;
+}
+
+.programs-game-page {
+  text-align: initial;
+}
+
+@media (max-width: 700px) {
+  .programs-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .programs-header p {
+    text-align: center;
+  }
 }
